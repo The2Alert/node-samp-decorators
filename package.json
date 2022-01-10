@@ -1,26 +1,29 @@
 {
   "name": "@sa-mp/decorators",
   "version": "1.0.0",
-  "description": "",
+  "description": "Decorators for NodeSamp.",
+  "keywords": ["nodesamp", "sa-mp", "samp", "decorators", "core"],
+  "repository": "github:dev2alert/node-samp-decorators",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "scripts": {
     "compile": "tsc",
     "dev": "tsc-watch"
   },
   "author": "dev2alert",
-  "license": "ISC",
+  "license": "MIT",
+  "dependencies": {
+    "reflect-metadata": "^0.1.13",
+    "ctx-api-decorators": "1.x"
+  },
   "devDependencies": {
-    "@sa-mp/core": "1.0.0",
-    "cross-env": "^7.0.3",
+    "@sa-mp/core": "1.x",
     "tsc-watch": "^4.5.0",
     "typescript": "^4.5.2"
   },
   "peerDependencies": {
-    "@sa-mp/core": "1.0.0"
-  },
-  "dependencies": {
-    "reflect-metadata": "^0.1.13",
-    "ctx-api-decorators": "1.0.0"
+    "@sa-mp/core": "1.x"
   }
 }
